@@ -4,8 +4,9 @@
   * add -prints add two numbers
   *
   * @i: print int i
-  */
-int add(int a, int b)
+*/
+ 
+int add(int a , int b)
 {
-	return(a + b);
+	return (a + b);
 }
