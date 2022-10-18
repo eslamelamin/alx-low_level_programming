@@ -1,6 +1,7 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <holberton.h>
 /**
- *  main - Print the word
+ * main - Print the word
  *
  * Return: Always 0 (Success)
  */
