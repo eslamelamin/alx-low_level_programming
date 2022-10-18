@@ -1,18 +1,17 @@
-#include <stdio.h>
-#include <holberton.h>
+#include "holberton.h"
 /**
- * main - Print the word
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	char p[] = "Holberton";
+	char *sh = "Holberton";
 
-	for (i = 0; i < 9; i++)
+	while (*sh)
 	{
-		_putchar(p[i]);
+		_putchar(*sh);
+		sh++;
 	}
 	_putchar('\n');
 
