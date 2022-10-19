@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h>
- /**
-  * add -prints add two numbers
-  *
-  * @i: print int i
-*/
- 
-int add(int a , int b)
+
+/**
+ * add - Adds two integers.
+ *
+ * Return: The result of the addition.
+ */
+int add(int num1, int num2)
 {
-	return (a + b);
+	return (num1 + num2);
 }
