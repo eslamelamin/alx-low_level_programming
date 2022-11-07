@@ -57,23 +57,23 @@ void util(char **words, char *str)
 	while (str[i])
 	{
 		if (flag == 0 && str[i] != ' ')
+		{
 			start = i;
-		flag = 1;
+			flag = 1;
+		}
+
+		if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
+		{
+			create_word(words, str, start, i, j);
+			j++;
+			flag = 0;
+		}
+
+		i++;
 	}
 
-	if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
-	{
+	if (flag == 1)
 		create_word(words, str, start, i, j);
-		j++;
-		flag = 0;
-	}
-
-	i++;
-}
-
-if (flag == 1)
-	create_word(words, str, start, i, j);
-	
 }
 
 /**
