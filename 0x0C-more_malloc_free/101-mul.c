@@ -123,6 +123,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 }
 
 
+
 /**
 
  * check_for_digits - checks the arguments to ensure they are digits
@@ -291,3 +292,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 
+}
